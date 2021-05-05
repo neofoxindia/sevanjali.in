@@ -2359,6 +2359,9 @@ li {
 }
 
 .popular-causes__img img {
+    max-height: 250px;
+    min-height: 250px;
+   object-fit: cover;
     width: 100%;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
