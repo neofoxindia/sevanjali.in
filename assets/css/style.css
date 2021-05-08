@@ -32,9 +32,11 @@
 # Tour Search
 --------------------------------------------------------------*/
 
+
 /*--------------------------------------------------------------
 # Common
 --------------------------------------------------------------*/
+
 
 /*
 
@@ -136,8 +138,6 @@ li {
     line-height: 60px;
 }
 
-
-
 .thm-btn {
     display: inline-block;
     vertical-align: middle;
@@ -207,6 +207,7 @@ li {
     cursor: pointer;
 }
 
+
 /* datepicker */
 
 .datepicker.dropdown-menu {
@@ -261,6 +262,7 @@ li {
 .post-pagination a+a {
     margin-left: 15px;
 }
+
 
 /* owl dots style */
 
@@ -358,7 +360,9 @@ li {
     color: #fff;
 }
 
+
 /* Cursor Style */
+
 .cursor {
     position: absolute;
     background-color: #fff;
@@ -366,15 +370,10 @@ li {
     height: 6px;
     border-radius: 100%;
     z-index: 1;
-    -webkit-transition: 0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) opacity,
-        0.3s cubic-bezier(0.75, -1.27, 0.3, 2.33) -webkit-transform;
-    transition: 0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) opacity,
-        0.3s cubic-bezier(0.75, -1.27, 0.3, 2.33) -webkit-transform;
-    transition: 0.3s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform,
-        0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) opacity;
-    transition: 0.3s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform,
-        0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) opacity,
-        0.3s cubic-bezier(0.75, -1.27, 0.3, 2.33) -webkit-transform;
+    -webkit-transition: 0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) opacity, 0.3s cubic-bezier(0.75, -1.27, 0.3, 2.33) -webkit-transform;
+    transition: 0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) opacity, 0.3s cubic-bezier(0.75, -1.27, 0.3, 2.33) -webkit-transform;
+    transition: 0.3s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform, 0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) opacity;
+    transition: 0.3s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform, 0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) opacity, 0.3s cubic-bezier(0.75, -1.27, 0.3, 2.33) -webkit-transform;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -407,15 +406,10 @@ li {
     height: 50px;
     border-radius: 100%;
     z-index: 1;
-    -webkit-transition: 0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) opacity,
-        0.6s cubic-bezier(0.75, -1.27, 0.3, 2.33) -webkit-transform;
-    transition: 0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) opacity,
-        0.6s cubic-bezier(0.75, -1.27, 0.3, 2.33) -webkit-transform;
-    transition: 0.6s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform,
-        0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) opacity;
-    transition: 0.6s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform,
-        0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) opacity,
-        0.6s cubic-bezier(0.75, -1.27, 0.3, 2.33) -webkit-transform;
+    -webkit-transition: 0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) opacity, 0.6s cubic-bezier(0.75, -1.27, 0.3, 2.33) -webkit-transform;
+    transition: 0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) opacity, 0.6s cubic-bezier(0.75, -1.27, 0.3, 2.33) -webkit-transform;
+    transition: 0.6s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform, 0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) opacity;
+    transition: 0.6s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform, 0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) opacity, 0.6s cubic-bezier(0.75, -1.27, 0.3, 2.33) -webkit-transform;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -465,21 +459,15 @@ li {
 }
 
 
-
-
-
-
 /* custom animations */
 
 @keyframes btnIconMove {
     0% {
         transform: rotate(0deg) translate(0px, 0px);
     }
-
     50% {
         transform: rotate(20deg) translate(10px, 0px);
     }
-
     100% {
         transform: rotate(0deg) translate(0px, 0px);
     }
@@ -489,31 +477,25 @@ li {
     0% {
         transform: translateY(0);
     }
-
     25% {
         transform: translateY(5px);
     }
-
     50% {
         transform: translateY(10px);
     }
-
     75% {
         transform: translateY(5px);
     }
-
     100% {
         transform: translateY(0px);
     }
 }
 
 
-
-
-
 /*--------------------------------------------------------------
     Site Header Header one wrap
 --------------------------------------------------------------*/
+
 .site-header__header-one-wrap {
     position: relative;
     display: block;
@@ -522,7 +504,6 @@ li {
 .site-header__logo-box {
     position: relative;
     display: block;
-    max-width: 190px;
     width: 100%;
     padding: 51px 0;
 }
@@ -638,7 +619,6 @@ li {
     color: var(--thm-primary);
 }
 
-
 .main-nav__left-one {
     position: relative;
     display: block;
@@ -724,6 +704,7 @@ li {
 
 
 /* Dropdown menu */
+
 .main-nav__main-navigation .dropdown-btn {
     display: none;
 }
@@ -733,20 +714,16 @@ li {
     width: 230px;
     background-color: #fff;
     border-top: 0px solid #f7f6f6;
-    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.05),
-        -2px 0px 5px 1px rgba(0, 0, 0, 0.05);
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.05), -2px 0px 5px 1px rgba(0, 0, 0, 0.05);
     -webkit-transform-origin: top;
     transform-origin: top;
     visibility: hidden;
     opacity: 0;
     z-index: 991;
-    -webkit-transition: opacity 500ms ease, visibility 500ms ease,
-        -webkit-transform 500ms ease;
-    transition: opacity 500ms ease, visibility 500ms ease,
-        -webkit-transform 500ms ease;
+    -webkit-transition: opacity 500ms ease, visibility 500ms ease, -webkit-transform 500ms ease;
+    transition: opacity 500ms ease, visibility 500ms ease, -webkit-transform 500ms ease;
     transition: transform 500ms ease, opacity 500ms ease, visibility 500ms ease;
-    transition: transform 500ms ease, opacity 500ms ease, visibility 500ms ease,
-        -webkit-transform 500ms ease;
+    transition: transform 500ms ease, opacity 500ms ease, visibility 500ms ease, -webkit-transform 500ms ease;
 }
 
 .main-nav__main-navigation .main-nav__navigation-box>li ul>li {
@@ -776,13 +753,14 @@ li {
     color: #ffffff;
 }
 
+
 /* Second level menu */
+
 .main-nav__main-navigation .main-nav__navigation-box>li>ul {
     top: 100%;
     left: 0;
     -webkit-transform: translateY(30px);
     transform: translateY(30px);
-
     visibility: hidden;
     opacity: 0;
 }
@@ -794,7 +772,9 @@ li {
     opacity: 1;
 }
 
+
 /* Third level menu */
+
 .main-nav__main-navigation .main-nav__navigation-box>li>ul>li>ul {
     top: 0;
     left: 100%;
@@ -811,7 +791,9 @@ li {
     opacity: 1;
 }
 
+
 /* After Third level menu */
+
 .main-nav__main-navigation .main-nav__navigation-box>li>ul>li>ul>li ul {
     display: none;
 }
@@ -893,12 +875,8 @@ li {
 }
 
 
-
-
-
-
-
 /* stricky Menu Css */
+
 .stricked-menu {
     position: fixed;
     top: 0;
@@ -929,6 +907,7 @@ li {
 
 
 /*================= Side Menu Toggler Icon ==================*/
+
 .main-nav__left {
     position: relative;
     display: block;
@@ -943,12 +922,10 @@ li {
 }
 
 
-
-
-
 /*--------------------------------------------------------------
 # Site Header Header Two Wrap
 --------------------------------------------------------------*/
+
 .site-header__header-two-wrap {
     position: absolute;
     left: 0px;
@@ -1074,7 +1051,6 @@ li {
     display: inline-block;
 }
 
-
 .main-nav__main-navigation__two {
     margin-left: auto;
     margin-right: auto;
@@ -1109,7 +1085,6 @@ li {
     color: var(--thm-primary);
 }
 
-
 .main-nav__right-two .main-nav__right__icon-search-box .main-nav__search i {
     font-size: 24px;
     color: #ffffff;
@@ -1133,12 +1108,9 @@ li {
     padding: 0 60px;
 }
 
-
-
 .main-nav__header-two .stricked-menu {
     background: var(--thm-black);
 }
-
 
 .main-nav__header-two__content-box {
     display: flex;
@@ -1158,6 +1130,7 @@ li {
 /*--------------------------------------------------------------
 # Site Header Header three Wrap
 --------------------------------------------------------------*/
+
 .site-header__header-three-wrap {
     position: absolute;
     left: 0px;
@@ -1225,10 +1198,6 @@ li {
     padding: 43px 0;
 }
 
-
-
-
-
 .main-nav__header-three .main-nav__main-navigation .main-nav__navigation-box>li+li {
     margin-left: 49px;
 }
@@ -1247,9 +1216,6 @@ li {
     color: var(--thm-black);
 }
 
-
-
-
 .main-nav__header-three .stricked-menu {
     background: #ffffff;
 }
@@ -1264,17 +1230,15 @@ li {
 
 
 /* stricky Menu Css */
+
 .header_three_wrap .stricked-menu {
     background-color: #ffffff;
 }
-
-
 
 @media (min-width: 1200px) {
     .main-nav__left .side-menu__toggler {
         display: none;
     }
-
     .main-nav__main-navigation {
         display: -moz-flex;
         display: -ms-flex;
@@ -1284,19 +1248,19 @@ li {
         -webkit-box-align: center;
         align-items: center;
     }
-
     .mobile_menu_icon_two .side-menu__toggler {
         display: none;
     }
-
     .mobile_menu_icon_three .side-menu__toggler {
         display: none;
     }
 }
 
+
 /*--------------------------------------------------------------
 # Main Slider
 --------------------------------------------------------------*/
+
 .main-slider {
     overflow: hidden;
     position: relative;
@@ -1391,8 +1355,7 @@ li {
     -webkit-transition: opacity 2000ms ease, -webkit-transform 2000ms ease;
     transition: opacity 2000ms ease, -webkit-transform 2000ms ease;
     transition: transform 2000ms ease, opacity 2000ms ease;
-    transition: transform 2000ms ease, opacity 2000ms ease,
-        -webkit-transform 2000ms ease;
+    transition: transform 2000ms ease, opacity 2000ms ease, -webkit-transform 2000ms ease;
 }
 
 .main-slider .thm-btn {
@@ -1401,14 +1364,10 @@ li {
     transform: translateY(100px);
     -webkit-transition-delay: 2500ms;
     transition-delay: 2500ms;
-    -webkit-transition: opacity 2000ms ease, color 500ms ease,
-        background 500ms ease, -webkit-transform 2000ms ease;
-    transition: opacity 2000ms ease, color 500ms ease, background 500ms ease,
-        -webkit-transform 2000ms ease;
-    transition: transform 2000ms ease, opacity 2000ms ease, color 500ms ease,
-        background 500ms ease;
-    transition: transform 2000ms ease, opacity 2000ms ease, color 500ms ease,
-        background 500ms ease, -webkit-transform 2000ms ease;
+    -webkit-transition: opacity 2000ms ease, color 500ms ease, background 500ms ease, -webkit-transform 2000ms ease;
+    transition: opacity 2000ms ease, color 500ms ease, background 500ms ease, -webkit-transform 2000ms ease;
+    transition: transform 2000ms ease, opacity 2000ms ease, color 500ms ease, background 500ms ease;
+    transition: transform 2000ms ease, opacity 2000ms ease, color 500ms ease, background 500ms ease, -webkit-transform 2000ms ease;
 }
 
 .main-slider .thm-btn:hover {
@@ -1515,6 +1474,7 @@ li {
 /*--------------------------------------------------------------
 # Main Slider Two
 --------------------------------------------------------------*/
+
 .main-slider-two {
     overflow: hidden;
     position: relative;
@@ -1568,6 +1528,7 @@ li {
     opacity: 1;
 }
 
+
 /*--------------------------------------------------------------
 # Main Slider Three
 --------------------------------------------------------------*/
@@ -1616,6 +1577,7 @@ li {
 .main-slider-three #main-slider-pagination {
     bottom: 50px;
 }
+
 
 /*--------------------------------------------------------------
 # Search Popup
@@ -1735,10 +1697,6 @@ li {
 }
 
 
-
-
-
-
 /*--------------------------------------------------------------
 # MobileNav
 --------------------------------------------------------------*/
@@ -1797,7 +1755,6 @@ li {
 .mobile-nav__content .header_btn_1 {
     margin-left: 0;
 }
-
 
 .mobile-nav__content .logo-box {
     margin-bottom: 40px;
@@ -2022,8 +1979,6 @@ li {
     font-size: inherit;
 }
 
-
-
 @media (max-width: 575px) {
     .side-menu__block-inner {
         max-width: 480px;
@@ -2042,18 +1997,13 @@ li {
     }
 }
 
-
-
-
 @media (max-width: 575px) {
-
     .side-menu__top,
     .side-menu__content,
     .mobile-nav__container {
         padding-left: 15px;
         padding-right: 15px;
     }
-
     .side-menu__sep {
         margin-top: 40px;
         margin-bottom: 40px;
@@ -2062,22 +2012,18 @@ li {
 }
 
 @media (max-width: 480px) {
-
     .side-menu__top,
     .side-menu__content,
     .mobile-nav__container {
         padding-left: 10px;
         padding-right: 15px;
     }
-
     .side-menu__sep {
         width: calc(100% - 50px);
     }
-
     .side-menu__social {
         margin-top: 40px;
     }
-
     .side-menu__social a {
         width: 45px;
         height: 45px;
@@ -2088,6 +2034,7 @@ li {
 /*--------------------------------------------------------------
 # Three Icons
 --------------------------------------------------------------*/
+
 .feature-one {
     position: relative;
     display: block;
@@ -2145,8 +2092,6 @@ li {
     transform: scale(1.2);
 }
 
-
-
 .feature-one__icon-box-img {
     position: absolute;
     top: -31px;
@@ -2191,9 +2136,11 @@ li {
     color: #4ac14f;
 }
 
+
 /*--------------------------------------------------------------
 # Welcome One
 --------------------------------------------------------------*/
+
 .welcome-one {
     position: relative;
     display: block;
@@ -2335,9 +2282,11 @@ li {
     line-height: 24px;
 }
 
+
 /*--------------------------------------------------------------
 # Popular Causes One
 --------------------------------------------------------------*/
+
 .popular-causes {
     position: relative;
     display: block;
@@ -2361,7 +2310,7 @@ li {
 .popular-causes__img img {
     max-height: 250px;
     min-height: 250px;
-   object-fit: cover;
+    object-fit: cover;
     width: 100%;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
@@ -2522,7 +2471,6 @@ li {
 .popular-causes__carousel.owl-carousel .owl-stage-outer {
     margin-right: -360px;
     padding-bottom: 60px;
-
 }
 
 .popular-causes__carousel.owl-theme .owl-nav {
@@ -2564,9 +2512,11 @@ li {
     border: 2px solid var(--thm-black);
 }
 
+
 /*--------------------------------------------------------------
 # We Are Helping
 --------------------------------------------------------------*/
+
 .we-are-helping {
     position: relative;
     display: block;
@@ -2688,9 +2638,11 @@ li {
     margin: 0;
 }
 
+
 /*--------------------------------------------------------------
 # We Need Help
 --------------------------------------------------------------*/
+
 .we-need-help {
     position: relative;
     display: block;
@@ -2844,9 +2796,11 @@ li {
     line-height: 45px;
 }
 
+
 /*--------------------------------------------------------------
 # Testimonials One
 --------------------------------------------------------------*/
+
 .testimonials-one {
     position: relative;
     display: block;
@@ -2891,7 +2845,6 @@ li {
     background-color: rgb(255, 255, 255);
     box-shadow: 0px 10px 60px 0px rgb(0, 0, 0, .07);
 }
-
 
 .testimonials-one__quote {
     height: 50px;
@@ -2963,9 +2916,11 @@ li {
     outline: none;
 }
 
+
 /*--------------------------------------------------------------
 # Join One
 --------------------------------------------------------------*/
+
 .join-one {
     position: relative;
     display: block;
@@ -3019,9 +2974,11 @@ li {
     margin-top: 34px;
 }
 
+
 /*--------------------------------------------------------------
 # Newsletter One
 --------------------------------------------------------------*/
+
 .newsletter-one {
     position: relative;
     display: block;
@@ -3109,9 +3066,11 @@ li {
     background: var(--thm-black);
 }
 
+
 /*--------------------------------------------------------------
 # News One
 --------------------------------------------------------------*/
+
 .news-one {
     position: relative;
     display: block;
@@ -3311,9 +3270,11 @@ li {
     color: #ffffff;
 }
 
+
 /*--------------------------------------------------------------
 # Gallery One
 --------------------------------------------------------------*/
+
 .gallery-one {
     position: relative;
     display: block;
@@ -3441,9 +3402,11 @@ li {
     color: var(--thm-black);
 }
 
+
 /*--------------------------------------------------------------
 # Brand One
 --------------------------------------------------------------*/
+
 .brand-one {
     position: relative;
     display: block;
@@ -3516,9 +3479,11 @@ li {
     opacity: 1;
 }
 
+
 /*--------------------------------------------------------------
 # Site Footer
 --------------------------------------------------------------*/
+
 .site-footer {
     position: relative;
     display: block;
@@ -3698,9 +3663,11 @@ li {
     top: 2px;
 }
 
+
 /*--------------------------------------------------------------
 # Site Footer Bottom
 --------------------------------------------------------------*/
+
 .site-footer-bottom {
     position: relative;
     display: block;
@@ -3755,9 +3722,11 @@ li {
     color: var(--thm-primary);
 }
 
+
 /*--------------------------------------------------------------
 # You Can Help
 --------------------------------------------------------------*/
+
 .you-can-help {
     position: relative;
     display: block;
@@ -3885,9 +3854,11 @@ li {
     justify-content: center;
 }
 
+
 /*--------------------------------------------------------------
 # Counter One
 --------------------------------------------------------------*/
+
 .counter-one {
     position: relative;
     display: block;
@@ -3954,9 +3925,11 @@ li {
     line-height: 30px;
 }
 
+
 /*--------------------------------------------------------------
 # Charity Activity
 --------------------------------------------------------------*/
+
 .charity-activity {
     position: relative;
     display: block;
@@ -4036,9 +4009,11 @@ li {
     color: var(--thm-primary);
 }
 
+
 /*--------------------------------------------------------------
 # Meet Volunteers One
 --------------------------------------------------------------*/
+
 .meet-volunteers-one {
     position: relative;
     display: block;
@@ -4173,9 +4148,11 @@ li {
     color: var(--thm-primary);
 }
 
+
 /*--------------------------------------------------------------
 # CTA One
 --------------------------------------------------------------*/
+
 .cta-one {
     position: relative;
     display: block;
@@ -4214,9 +4191,11 @@ li {
     color: var(--thm-primary);
 }
 
+
 /*--------------------------------------------------------------
 # Gallery Two
 --------------------------------------------------------------*/
+
 .gallery-tow {
     position: relative;
     display: block;
@@ -4255,8 +4234,6 @@ li {
     border-radius: var(--thm-border-radius);
     overflow: hidden;
 }
-
-
 
 .gallery-tow__img img {
     width: 100%;
@@ -4309,7 +4286,6 @@ li {
     transition: all 500ms ease;
     padding: 30px;
 }
-
 
 .gallery-two__hover:before {
     position: absolute;
@@ -4366,9 +4342,11 @@ li {
     color: var(--thm-black);
 }
 
+
 /*--------------------------------------------------------------
 # Events And Newsletter
 --------------------------------------------------------------*/
+
 .events-and-newsletter {
     position: relative;
     display: block;
@@ -4419,8 +4397,7 @@ li {
     -webkit-transition: opacity 500ms ease, -webkit-transform 500ms ease;
     transition: opacity 500ms ease, -webkit-transform 500ms ease;
     transition: transform 500ms ease, opacity 500ms ease;
-    transition: transform 500ms ease, opacity 500ms ease,
-        -webkit-transform 500ms ease;
+    transition: transform 500ms ease, opacity 500ms ease, -webkit-transform 500ms ease;
 }
 
 .upcoming-events__sinlge:hover .upcoming-events__img img {
@@ -4498,7 +4475,6 @@ li {
     margin: 0;
 }
 
-
 .events-and-newsletter__newsletter {
     position: relative;
     display: block;
@@ -4543,9 +4519,11 @@ li {
     padding: 16.5px 75px;
 }
 
+
 /*--------------------------------------------------------------
 # News Two
 --------------------------------------------------------------*/
+
 .news-two {
     position: relative;
     display: block;
@@ -4608,9 +4586,11 @@ li {
     border: 2px solid var(--thm-black);
 }
 
+
 /*--------------------------------------------------------------
 # Brand Two
 --------------------------------------------------------------*/
+
 .brand-two {
     position: relative;
     display: block;
@@ -4641,9 +4621,11 @@ li {
     opacity: 0.6;
 }
 
+
 /*--------------------------------------------------------------
 # Give Helping
 --------------------------------------------------------------*/
+
 .give-helping {
     position: relative;
     display: block;
@@ -4709,7 +4691,6 @@ li {
     opacity: 0.4;
 }
 
-
 .give-helping__two-boxes__text {
     position: absolute;
     top: 0;
@@ -4756,7 +4737,6 @@ li {
     font-family: var(--thm-font-shadows);
     text-align: center;
 }
-
 
 .give-helping__cause {
     position: relative;
@@ -4899,9 +4879,11 @@ li {
     top: 2px;
 }
 
+
 /*--------------------------------------------------------------
 # Popular Causes Two
 --------------------------------------------------------------*/
+
 .popular-causes-two {
     position: relative;
     display: block;
@@ -4914,9 +4896,11 @@ li {
     margin-bottom: 30px;
 }
 
+
 /*--------------------------------------------------------------
 # Welcome Two
 --------------------------------------------------------------*/
+
 .welcome-two {
     position: relative;
     display: block;
@@ -4968,9 +4952,7 @@ li {
     border-radius: 33.5px;
     -webkit-transition: all 500ms ease;
     transition: all 500ms ease;
-
 }
-
 
 .welcome-two__checks a i {
     height: 17px;
@@ -5053,9 +5035,11 @@ li {
     margin: 0;
 }
 
+
 /*--------------------------------------------------------------
 # Three Boxes
 --------------------------------------------------------------*/
+
 .three-boxes {
     position: relative;
     display: block;
@@ -5148,7 +5132,6 @@ li {
     z-index: 1;
 }
 
-
 .three-boxes__sinlge-hover__img img {
     width: 100%;
     height: 100%;
@@ -5201,9 +5184,11 @@ li {
     margin: 0;
 }
 
+
 /*--------------------------------------------------------------
 # Testimonials Two
 --------------------------------------------------------------*/
+
 .testimonials-two {
     position: relative;
     display: block;
@@ -5323,9 +5308,11 @@ li {
     opacity: 1;
 }
 
+
 /*--------------------------------------------------------------
 # Gallery Three
 --------------------------------------------------------------*/
+
 .gallery-three {
     padding-top: 60px;
 }
@@ -5340,9 +5327,11 @@ li {
     padding-top: 6px;
 }
 
+
 /*--------------------------------------------------------------
 # Featured Campaigns
 --------------------------------------------------------------*/
+
 .featured-campaigns {
     position: relative;
     display: block;
@@ -5558,6 +5547,7 @@ li {
 /*--------------------------------------------------------------
 # Brand Three
 --------------------------------------------------------------*/
+
 .brand-three {
     position: relative;
     display: block;
@@ -5605,9 +5595,11 @@ li {
     opacity: 0.8;
 }
 
+
 /*--------------------------------------------------------------
 # make Donation
 --------------------------------------------------------------*/
+
 .make-donation {
     position: relative;
     display: block;
@@ -5754,15 +5746,16 @@ li {
     border-bottom-right-radius: 8px;
 }
 
-
 .make-donation__img img {
     width: 100%;
     border-radius: var(--thm-border-radius);
 }
 
+
 /*--------------------------------------------------------------
 # News Three
 --------------------------------------------------------------*/
+
 .news-three {
     padding-top: 120px;
     margin-top: 0;
@@ -5772,6 +5765,7 @@ li {
 /*--------------------------------------------------------------
 # Google_map
 --------------------------------------------------------------*/
+
 .google-map {
     position: relative;
     display: block;
@@ -5787,9 +5781,11 @@ li {
     height: 560px;
 }
 
+
 /*--------------------------------------------------------------
 # Page Header
 --------------------------------------------------------------*/
+
 .page-header {
     position: relative;
     display: block;
@@ -5858,6 +5854,7 @@ li {
 /*--------------------------------------------------------------
 # Popular Causes Three
 --------------------------------------------------------------*/
+
 .popular-causes-three {
     position: relative;
     display: block;
@@ -5878,6 +5875,7 @@ li {
 /*--------------------------------------------------------------
 # Campaign Details
 --------------------------------------------------------------*/
+
 .campaign-details {
     position: relative;
     display: block;
@@ -6375,9 +6373,11 @@ li {
     margin: 0;
 }
 
+
 /*--------------------------------------------------------------
 ## Event Page
 --------------------------------------------------------------*/
+
 .event-page {
     position: relative;
     display: block;
@@ -6414,8 +6414,7 @@ li {
     -webkit-transition: opacity 500ms ease, -webkit-transform 500ms ease;
     transition: opacity 500ms ease, -webkit-transform 500ms ease;
     transition: transform 500ms ease, opacity 500ms ease;
-    transition: transform 500ms ease, opacity 500ms ease,
-        -webkit-transform 500ms ease;
+    transition: transform 500ms ease, opacity 500ms ease, -webkit-transform 500ms ease;
 }
 
 .event-page__single:hover .event-page__img img {
@@ -6505,9 +6504,11 @@ li {
     font-size: 14px;
 }
 
+
 /*--------------------------------------------------------------
 ## Event Details Top
 --------------------------------------------------------------*/
+
 .event-details-top {
     position: relative;
     display: block;
@@ -6546,9 +6547,11 @@ li {
     margin: 0;
 }
 
+
 /*--------------------------------------------------------------
 ## Event Details Bottom
 --------------------------------------------------------------*/
+
 .event-details-bottom {
     position: relative;
     display: block;
@@ -6653,7 +6656,9 @@ li {
     background: var(--thm-black);
 }
 
+
 /*Event Details Bottom Map*/
+
 .event-details-bottom__map {
     position: relative;
     display: block;
@@ -6663,7 +6668,9 @@ li {
     border-radius: var(--thm-border-radius);
 }
 
+
 /*Event Details Bottom Organizer*/
+
 .event-details-bottom__organizer {
     position: relative;
     display: block;
@@ -6717,9 +6724,11 @@ li {
     color: #ffffff;
 }
 
+
 /*--------------------------------------------------------------
 ## News Page
 --------------------------------------------------------------*/
+
 .news-page {
     position: relative;
     display: block;
@@ -6730,9 +6739,11 @@ li {
     margin-top: 30px;
 }
 
+
 /*--------------------------------------------------------------
 ## News Details
 --------------------------------------------------------------*/
+
 .news-details {
     position: relative;
     display: block;
@@ -6906,6 +6917,7 @@ li {
     background: var(--thm-primary);
 }
 
+
 /* author */
 
 .author-one {
@@ -6938,6 +6950,7 @@ li {
     margin-top: 23px;
     line-height: 36px;
 }
+
 
 /*--------------------------------------------------------------
 # Sidebar
@@ -7178,6 +7191,7 @@ li {
 /*--------------------------------------------------------------
 # Contact Page
 --------------------------------------------------------------*/
+
 .contact-page {
     position: relative;
     display: block;
@@ -7345,9 +7359,11 @@ li {
     background: var(--thm-primary);
 }
 
+
 /*--------------------------------------------------------------
 # Contact Page Google Map
 --------------------------------------------------------------*/
+
 .contact-page-google-map {
     position: relative;
     display: block;
@@ -7361,9 +7377,11 @@ li {
     width: 100%;
 }
 
+
 /*--------------------------------------------------------------
 # Become Volunteer
 --------------------------------------------------------------*/
+
 .become-volunteer {
     position: relative;
     display: block;
@@ -7493,9 +7511,11 @@ li {
     margin-bottom: 10px;
 }
 
+
 /*--------------------------------------------------------------
 # Make Donation Two
 --------------------------------------------------------------*/
+
 .make-donation-two {
     position: relative;
     display: block;
@@ -7604,25 +7624,31 @@ li {
     border-radius: var(--thm-border-radius);
 }
 
+
 /*--------------------------------------------------------------
 # You Can Help Two
 --------------------------------------------------------------*/
+
 .you-can-help-two {
     padding-top: 120px;
     margin-top: 0;
 }
 
+
 /*--------------------------------------------------------------
 # Testimonials Three
 --------------------------------------------------------------*/
+
 .testimonials-three {
     padding-top: 60px;
     margin-top: 0;
 }
 
+
 /*--------------------------------------------------------------
 # Testimonials Three
 --------------------------------------------------------------*/
+
 .brand-four {
     position: relative;
     display: block;
