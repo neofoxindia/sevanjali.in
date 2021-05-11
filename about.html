@@ -17,13 +17,13 @@
 <link rel="stylesheet" href="assets/css/magnific-popup.css"/>
 <link rel="stylesheet" href="assets/css/fontawesome-all.min.css"/>
 <link rel="stylesheet" href="assets/css/swiper.min.css"/>
-<link rel="stylesheet" href="assets/css/bootstrap-select.min.css"/>
-<link rel="stylesheet" href="assets/css/jarallax.css"/>
-<link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css"/>
-<link rel="stylesheet" href="assets/css/bootstrap-datepicker.min.css"/>
-<link rel="stylesheet" href="assets/css/vegas.min.css"/>
-<link rel="stylesheet" href="assets/css/nouislider.min.css"/>
-<link rel="stylesheet" href="assets/css/nouislider.pips.css"/>
+<!--<link rel="stylesheet" href="assets/css/bootstrap-select.min.css"/>-->
+<!--<link rel="stylesheet" href="assets/css/jarallax.css"/>-->
+<!--<link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css"/>-->
+<!--<link rel="stylesheet" href="assets/css/bootstrap-datepicker.min.css"/>-->
+<!--<link rel="stylesheet" href="assets/css/vegas.min.css"/>-->
+<!--<link rel="stylesheet" href="assets/css/nouislider.min.css"/>-->
+<!--<link rel="stylesheet" href="assets/css/nouislider.pips.css"/>-->
 <link rel="stylesheet" href="assets/css/asting.css"/><!-- Template styles-->
 <link rel="stylesheet" href="assets/css/style.css"/>
 <link rel="stylesheet" href="assets/css/responsive.css"/>
@@ -39,7 +39,8 @@
                         </li>
                         <li>
                             <div class="icon"><i class="fas fa-envelope"></i></div>
-                            <div class="text"><p><a href="sevanjalifoundationggc@gmail.com">sevanjalifoundationggc@gmail.com</a>
+                            <div class="text"><p>
+                                <a href="mailto:sevanjalifoundationggc@gmail.com">sevanjalifoundationggc@gmail.com</a>
                             </p></div>
                         </li>
                     </ul>
@@ -61,10 +62,15 @@
                             class="fa fa-bars"></i></a>
                         <div class="main-nav__main-navigation clearfix">
                             <ul class="main-nav__navigation-box float-left">
-                                <li class="dropdown current"><a href="/">Home</a></li>
-                                <li class="dropdown"><a href="campaigns.html">Gallery</a></li>
-                                <li class="dropdown"><a href="about.html">About</a></li>
-                                <li><a href="contact.html">Contact</a><!-- Mobile--></li>
+                                <li class="dropdown" id="home">
+                                    <a href="index.html">Home</a></li>
+                                <li class="dropdown" id="gallery">
+                                    <a href="gallery.html">Gallery</a></li>
+                                <li class="dropdown" id="about">
+                                    <a href="about.html">About</a></li>
+                                <li class="dropdown" id="contact">
+                                    <a href="contact.html">Contact</a>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -73,26 +79,16 @@
         </div>
     </header>
 </div>
-<div class="mobile-nav__wrapper">
-    <div class="mobile-nav__overlay side-menu__toggler mobile-nav__toggler"></div>
-    <div class="mobile-nav__content"><span class="mobile-nav__close side-menu__toggler mobile-nav__toggler"><i
-            class="fa fa-times"></i></span>
-        <div class="logo-box"><a href="index.html" aria-label="logo image"><img src="assets/images/resources/logo-2.png"
-                                                                                alt=""/></a></div><!-- /.logo-box-->
-        <div class="mobile-nav__container clearfix"></div><!-- /.mobile-nav__container-->
-        <ul class="mobile-nav__contact list-unstyled">
-            <li><i class="fas fa-envelope"></i><a href="mailto:needhelp@asting.com">needhelp@asting.com</a></li>
-            <li><i class="fas fa-phone-square-alt"></i><a href="tel:666-888-0000">666 888 0000</a></li>
-        </ul><!-- /.mobile-nav__contact-->
-        <div class="mobile-nav__top">
-            <div class="mobile-nav__social"><a href="#" aria-label="twitter"><i class="fab fa-twitter"></i></a><a
-                    href="#" aria-label="facebook"><i class="fab fa-facebook-square"></i></a><a href="#"
-                                                                                                aria-label="pinterest"><i
-                    class="fab fa-pinterest-p"></i></a><a href="#" aria-label="instagram"><i
-                    class="fab fa-instagram"></i></a></div><!-- /.mobile-nav__social--></div><!-- /.mobile-nav__top-->
-    </div>
-</div><!-- Preloader-->
+<!-- Preloader-->
 <div class="preloader"><img class="preloader__image" src="assets/images/loader.png" alt=""/></div>
+<script>
+    const location_string = document.location.href;
+    const get_el = (id) => document.getElementById(id);
+    if (location_string.includes('gallery')) get_el('gallery').classList.add("current");
+    else if (location_string.includes('contact')) get_el('contact').classList.add("current");
+    else if (location_string.includes('about')) get_el('about').classList.add("current");
+    else get_el('home').classList.add("current");
+</script>
 <section class="make-donation-two mt-5">
     <div class="container mt-5">
         <div class="row">
@@ -349,6 +345,30 @@
         </div>
     </div>
 </div><!-- Site Footer Bottom End-->
+
+<div class="mobile-nav__wrapper">
+    <div class="mobile-nav__overlay side-menu__toggler mobile-nav__toggler"></div>
+    <div class="mobile-nav__content">
+        <span class="mobile-nav__close side-menu__toggler mobile-nav__toggler">
+            <i class="fa fa-times"></i></span>
+        <div class="logo-box">
+            <a href="index.html" aria-label="logo image">
+                <img src="assets/images/resources/logo-2.png" alt=""/></a>
+        </div><!-- /.logo-box-->
+        <div class="mobile-nav__container clearfix"></div><!-- /.mobile-nav__container-->
+        <ul class="mobile-nav__contact list-unstyled">
+            <li><i class="fas fa-envelope"></i><a href="mailto:needhelp@asting.com">needhelp@asting.com</a></li>
+            <li><i class="fas fa-phone-square-alt"></i><a href="tel:666-888-0000">666 888 0000</a></li>
+        </ul><!-- /.mobile-nav__contact-->
+        <div class="mobile-nav__top">
+            <div class="mobile-nav__social"><a href="#" aria-label="twitter"><i class="fab fa-twitter"></i></a><a
+                    href="#" aria-label="facebook"><i class="fab fa-facebook-square"></i></a><a href="#"
+                                                                                                aria-label="pinterest"><i
+                    class="fab fa-pinterest-p"></i></a><a href="#" aria-label="instagram"><i
+                    class="fab fa-instagram"></i></a></div><!-- /.mobile-nav__social--></div><!-- /.mobile-nav__top-->
+    </div>
+</div>
+
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/bootstrap.bundle.min.js"></script>
 <script src="assets/js/owl.carousel.min.js"></script>
@@ -357,17 +377,9 @@
 <script src="assets/js/TweenMax.min.js"></script>
 <script src="assets/js/wow.js"></script>
 <script src="assets/js/jquery.magnific-popup.min.js"></script>
-<script src="assets/js/jquery.ajaxchimp.min.js"></script>
 <script src="assets/js/swiper.min.js"></script>
 <script src="assets/js/typed-2.0.11.js"></script>
-<script src="assets/js/vegas.min.js"></script>
-<script src="assets/js/jquery.validate.min.js"></script>
-<script src="assets/js/bootstrap-select.min.js"></script>
 <script src="assets/js/countdown.min.js"></script>
-<script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
-<script src="assets/js/bootstrap-datepicker.min.js"></script>
-<script src="assets/js/nouislider.min.js"></script>
-<script src="assets/js/isotope.js"></script>
 <script src="assets/js/appear.js"></script>
 <script src="assets/js/jarallax.js"></script><!-- template scripts-->
 <script src="assets/js/theme.js"></script>
@@ -375,21 +387,21 @@
 <script src="assets/js/bootstrap.bundle.min.js"></script>
 <script src="assets/js/owl.carousel.min.js"></script>
 <script src="assets/js/waypoints.min.js"></script>
-<script src="assets/js/jquery.counterup.min.js"></script>
+<!--<script src="assets/js/jquery.counterup.min.js"></script>-->
 <script src="assets/js/TweenMax.min.js"></script>
-<script src="assets/js/wow.js"></script>
-<script src="assets/js/jquery.magnific-popup.min.js"></script>
-<script src="assets/js/jquery.ajaxchimp.min.js"></script>
+<!--<script src="assets/js/wow.js"></script>-->
+<!--<script src="assets/js/jquery.magnific-popup.min.js"></script>-->
+<!--<script src="assets/js/jquery.ajaxchimp.min.js"></script>-->
 <script src="assets/js/swiper.min.js"></script>
 <script src="assets/js/typed-2.0.11.js"></script>
-<script src="assets/js/vegas.min.js"></script>
-<script src="assets/js/jquery.validate.min.js"></script>
-<script src="assets/js/bootstrap-select.min.js"></script>
-<script src="assets/js/countdown.min.js"></script>
-<script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
-<script src="assets/js/bootstrap-datepicker.min.js"></script>
-<script src="assets/js/nouislider.min.js"></script>
-<script src="assets/js/isotope.js"></script>
+<!--<script src="assets/js/vegas.min.js"></script>-->
+<!--<script src="assets/js/jquery.validate.min.js"></script>-->
+<!--<script src="assets/js/bootstrap-select.min.js"></script>-->
+<!--<script src="assets/js/countdown.min.js"></script>-->
+<!--<script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>-->
+<!--<script src="assets/js/bootstrap-datepicker.min.js"></script>-->
+<!--<script src="assets/js/nouislider.min.js"></script>-->
+<!--<script src="assets/js/isotope.js"></script>-->
 <script src="assets/js/appear.js"></script>
 <script src="assets/js/jarallax.js"></script><!-- template scripts-->
 <script src="assets/js/theme.js"></script>
