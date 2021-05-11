@@ -1020,9 +1020,11 @@ li {
 .main-nav__header-two {
     position: relative;
     display: block;
-    background: rgba(44, 39, 52, .70);
+    background: #fff;
+    
     border-bottom: 1px solid rgba(255, 255, 255, .1);
 }
+
 
 .main-nav__header-two__container {
     position: relative;
@@ -1044,7 +1046,7 @@ li {
 .main-nav__left-two .logo-two {
     position: relative;
     display: block;
-    padding: 31px 0;
+    /* padding: 31px 0; */
 }
 
 .main-nav__left-two .logo-two a {
@@ -1068,11 +1070,11 @@ li {
 
 .main-nav__header-two .main-nav__main-navigation .main-nav__navigation-box>li {
     position: relative;
-    padding: 33px 0px 33px;
+    padding: 15px 0px 15px;
 }
 
 .main-nav__header-two .main-nav__main-navigation .main-nav__navigation-box>li>a {
-    color: #ffffff;
+    color: black;
     text-transform: capitalize;
 }
 
@@ -1109,7 +1111,7 @@ li {
 }
 
 .main-nav__header-two .stricked-menu {
-    background: var(--thm-black);
+    /* background: var(--thm-black); */
 }
 
 .main-nav__header-two__content-box {

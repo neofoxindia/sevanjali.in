@@ -1,0 +1,23 @@
+{
+  "name": "sevanjali.in",
+  "version": "1.0.0",
+  "description": "Sevanjali Foundation",
+  "main": "index.js",
+  "scripts": {
+    "build": "pug index.pug about.pug gallery.pug contact.pug"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neofoxindia/sevanjali.in.git"
+  },
+  "author": "Neofox",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/neofoxindia/sevanjali.in/issues"
+  },
+  "homepage": "https://github.com/neofoxindia/sevanjali.in#readme",
+  "dependencies": {
+    "pug": "^3.0.2",
+    "pug-cli": "*"
+  }
+}

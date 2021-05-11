@@ -1,4 +1,4 @@
-<!DOCTYPE html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta http-equiv="X-UA-Compatible" content="ie=edge"><title>HomePage</title><link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-touch-icon.png"/>
+<!DOCTYPE html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta http-equiv="X-UA-Compatible" content="ie=edge"><title>Gallery</title><link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-touch-icon.png"/>
 <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png"/>
 <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png"/>
 <link rel="manifest" href="assets/images/favicons/site.webmanifest"/><!-- Fonts-->
@@ -187,171 +187,382 @@
     else if (location_string.includes('about')) get_el('about').classList.add("current");
     else get_el('home').classList.add("current");
 </script>
-<div class="page-wrapper"style="margin-top:105px ;"><!-- Main Slider Start-->
-    <section class="main-slider">
-        <div class="swiper-container thm-swiper__slider"
-             data-swiper-options="{&quot;slidesPerView&quot;: 1, &quot;loop&quot;: true,        &quot;effect&quot;: &quot;fade&quot;,        &quot;pagination&quot;: {        &quot;el&quot;: &quot;#main-slider-pagination&quot;,        &quot;type&quot;: &quot;bullets&quot;,        &quot;clickable&quot;: true        },        &quot;navigation&quot;: {        &quot;nextEl&quot;: &quot;.main-slider-button-next&quot;,        &quot;prevEl&quot;: &quot;.main-slider-button-prev&quot;,        &quot;clickable&quot;: true        },        &quot;autoplay&quot;: {        &quot;delay&quot;: 5000        }}">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="image-layer"
-                         style="background-image: url(assets/images/backgrounds/slider_1.jpg.webp);height: 100%;"></div>
-                    <div class="container" style="height: 90vh;"></div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="image-layer"
-                         style="background-image: url(assets/images/backgrounds/slider_2.jpg.webp);height: 100%;"></div>
-                    <div class="container" style="height: 90vh;"></div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="image-layer"
-                         style="background-image: url(assets/images/backgrounds/slider_3.jpg.webp);height: 100%;"></div>
-                    <div class="container" style="height: 90vh;"></div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="image-layer"
-                         style="background-image: url(assets/images/backgrounds/slider_4.jpg.webp);height: 100%;"></div>
-                    <div class="container" style="height: 90vh;"></div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="image-layer"
-                         style="background-image: url(assets/images/backgrounds/slider_5.jpg.webp);height: 100%;"></div>
-                    <div class="container" style="height: 90vh;"></div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="image-layer"
-                         style="background-image: url(assets/images/backgrounds/slider_6.jpg.webp);height: 100%;"></div>
-                    <div class="container" style="height: 90vh;"></div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="image-layer"
-                         style="background-image: url(assets/images/backgrounds/slider_7.jpg.webp);height: 100%;"></div>
-                    <div class="container" style="height: 90vh;"></div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="image-layer"
-                         style="background-image: url(assets/images/backgrounds/slider_8.jpg.webp);height: 100%;"></div>
-                    <div class="container" style="height: 90vh;"></div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="image-layer"
-                         style="background-image: url(assets/images/backgrounds/slider_9.jpg.webp);height: 100%;"></div>
-                    <div class="container" style="height: 90vh;"></div>
-                </div>
-            </div>
-            <div class="swiper-pagination" id="main-slider-pagination"></div>
-            <div class="main-slider-nav">
-                <div class="main-slider-button-prev"><span class="icon-right-arrow"></span></div>
-                <div class="main-slider-button-next"><span class="icon-right-arrow"></span></div>
-            </div>
-        </div>
-    </section><!-- Main Slider End--><!-- Welcome Two Start-->
-    <section class="welcome-two">
-        <div class="welcome-two-hand"></div>
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-6 col-lg-6">
-                    <div class="welcome-two__left">
-                        <div class="block-title text-left"><h4>Our Community</h4>
-                            <h2>Welcome to Sevanjali Foundation</h2></div>
-                        <div class="welcome-two__checks"><a class="welcome-two__check-one" href="#"><i
-                                class="fa fa-check"></i>Prosper in this
-                            volatile</a><a href="#"><i class="fa fa-check"></i>Prosper in this volatile</a></div>
-                        <p class="welcome-two__text">sevanjali Foundation, beginning in the corridors of education, has
-                            adopted a lifecycle approach with intensive programmes focused on family health, livelihood
-                            and community engagement through women empowerment, which addresses
-                            the needs of less privileged children, their families and the larger community.</p>
-                        <div class="welcome-two__btn"><!-- <a href="about.html" class="thm-btn">Learn More</a>--></div>
-                    </div>
-                </div>
-                <div class="col-xl-6 col-lg-6">
-                    <div class="welcome-two__right">
-                        <div class="welcome-two__img mt-5"><img class="mt-5" src="assets/images/backgrounds/kids.jpg"
-                                                                alt=""/><!--<div class="welcome-two__counter">
-<h3>3,880</h3>
-<p>Campaign <br> Funds</p>
-</div>--></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section><!-- Welcome Two End--><!-- Three Icon Start-->
-    <section class="feature-one">
-        <div class="container">
-            <div class="feature-one__inner">
-                <div class="row">
-                    <div class="col-xl-4 col-lg-4"><!-- Three Icon Single-->
-                        <div class="feature-one__single feature-one__single-first-item">
-                            <div class="feature-one__icon-wrap">
-                                <div class="feature-one__icon-box"><span class="icon-heart"></span>
-                                    <div class="feature-one__icon-box-img"><img
-                                            src="assets/images/resources/three_iocn_box_bg.png" alt=""/></div>
-                                </div>
-                                <div class="feature-one__icon-text-box"><h4>Become<br/> Volunteer</h4></div>
-                            </div>
-                            <p class="feature-one__icons-single-text">Our alliance is made up of supporters, partners,
-                                staff, and volunteers who share our commitment to universal access to quality health
-                                care. Just like a health system, every person plays a role in keeping us working toward
-                                this ultimate goal. Will you join us?</p></div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4">
-                        <div class="feature-one__single feature-one__single-second-item">
-                            <div class="feature-one__icon-wrap">
-                                <div class="feature-one__icon-box feature-one__icon-box-two"><span
-                                        class="icon-wallet-filled-money-tool"></span>
-                                    <div class="feature-one__icon-box-img"><img
-                                            src="assets/images/resources/three_iocn_box_bg-2.png" alt=""/></div>
-                                </div>
-                                <div class="feature-one__icon-text-box"><h4>Quick<br/> Fundraise</h4></div>
-                            </div>
-                            <p class="feature-one__icons-single-text">There are many of lorem Ipsum, but the majori have
-                                suffered alteration in some form.</p></div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4"><!-- Three Icon Single-->
-                        <div class="feature-one__single feature-one__single-third-item">
-                            <div class="feature-one__icon-wrap">
-                                <div class="feature-one__icon-box feature-one__icon-box-three"><span
-                                        class="icon-charity"></span>
-                                    <div class="feature-one__icon-box-img"><img
-                                            src="assets/images/resources/three_iocn_box_bg-3.png" alt=""/></div>
-                                </div>
-                                <div class="feature-one__icon-text-box"><h4>Start<br/> Donating</h4></div>
-                            </div>
-                            <p class="feature-one__icons-single-text">When you support Health Alliance International,
-                                you take a stand for a more equitable and respectful model of global health. Your
-                                donation not only helps us expand our reach, it is an investment in our shared values of
-                                health equity and solidarity.</p></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section><!-- Three Icon End--><!-- Welcome One Start-->
-    <section class="welcome-one">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-6 col-lg-6">
-                    <div class="welcome-one__left">
-                        <div class="welcome-one__img wow slideInLeft" data-wow-delay="100ms"><img
-                                src="assets/images/backgrounds/mission.jpg" alt=""/></div>
-                    </div>
-                </div>
-                <div class="col-xl-6 col-lg-6">
-                    <div class="welcome-one__right">
-                        <div class="block-title text-left"><h4>Helping Today</h4>
-                            <h2>Our Goal is to Help Poor People</h2></div>
-                        <p class="welcome-one__text">Helping, poor, unaware, uneducated people and Indian communities.
-                            so that our society ,communities come to know about health education and keep them healthy
-                            and cleanliness.</p>
-                        <div class="welcome-one__campaigns">
-                            <div class="iocn"><span class="icon-donation"></span></div>
-                            <div class="text"><h2 class="counter">86,700</h2>
-                                <p>Successful Campaigns</p></div>
+<!--Popular Causes Three Start-->
+<section class="popular-causes-three campaign-page mt-5">
+    <div class="container mt-5">
+        <div class="row">
+
+
+            <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="100ms">
+
+                <a class="popular-causes__sinlge" href="assets/images/gallery/1.jpeg">
+
+                    <div class="popular-causes__img">
+
+                        <img src="assets/images/gallery/1.jpeg" alt="">
+
+                        <div class="popular-causes__category">
+
+                            <p>Image</p>
+
                         </div>
+
                     </div>
-                </div>
+
+                </a>
+
             </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="200ms">
+
+                <a class="popular-causes__sinlge" href="assets/images/gallery/2.jpeg">
+
+                    <div class="popular-causes__img">
+
+                        <img src="assets/images/gallery/2.jpeg" alt="">
+
+                        <div class="popular-causes__category">
+
+                            <p>Image</p>
+
+                        </div>
+
+                    </div>
+
+                </a>
+
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="300ms">
+
+                <a class="popular-causes__sinlge" href="assets/images/gallery/3.jpeg">
+
+                    <div class="popular-causes__img">
+
+                        <img src="assets/images/gallery/3.jpeg" alt="">
+
+                        <div class="popular-causes__category">
+
+                            <p>Image</p>
+
+                        </div>
+
+                    </div>
+
+                </a>
+
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="400ms">
+
+                <a class="popular-causes__sinlge" href="assets/images/gallery/4.jpeg">
+
+                    <div class="popular-causes__img">
+
+                        <img src="assets/images/gallery/4.jpeg" alt="">
+
+                        <div class="popular-causes__category">
+
+                            <p>Image</p>
+
+                        </div>
+
+                    </div>
+
+                </a>
+
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="500ms">
+
+                <a class="popular-causes__sinlge" href="assets/images/gallery/5.jpeg">
+
+                    <div class="popular-causes__img">
+
+                        <img src="assets/images/gallery/5.jpeg" alt="">
+
+                        <div class="popular-causes__category">
+
+                            <p>Image</p>
+
+                        </div>
+
+                    </div>
+
+                </a>
+
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="600ms">
+
+                <a class="popular-causes__sinlge" href="assets/images/gallery/6.jpeg">
+
+                    <div class="popular-causes__img">
+
+                        <img src="assets/images/gallery/6.jpeg" alt="">
+
+                        <div class="popular-causes__category">
+
+                            <p>Image</p>
+
+                        </div>
+
+                    </div>
+
+                </a>
+
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="700ms">
+
+                <a class="popular-causes__sinlge" href="assets/images/gallery/7.jpeg">
+
+                    <div class="popular-causes__img">
+
+                        <img src="assets/images/gallery/7.jpeg" alt="">
+
+                        <div class="popular-causes__category">
+
+                            <p>Image</p>
+
+                        </div>
+
+                    </div>
+
+                </a>
+
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="800ms">
+
+                <a class="popular-causes__sinlge" href="assets/images/gallery/8.jpeg">
+
+                    <div class="popular-causes__img">
+
+                        <img src="assets/images/gallery/8.jpeg" alt="">
+
+                        <div class="popular-causes__category">
+
+                            <p>Image</p>
+
+                        </div>
+
+                    </div>
+
+                </a>
+
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="900ms">
+
+                <a class="popular-causes__sinlge" href="assets/images/gallery/9.jpeg">
+
+                    <div class="popular-causes__img">
+
+                        <img src="assets/images/gallery/9.jpeg" alt="">
+
+                        <div class="popular-causes__category">
+
+                            <p>Image</p>
+
+                        </div>
+
+                    </div>
+
+                </a>
+
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="1000ms">
+
+                <a class="popular-causes__sinlge" href="assets/images/gallery/10.jpeg">
+
+                    <div class="popular-causes__img">
+
+                        <img src="assets/images/gallery/10.jpeg" alt="">
+
+                        <div class="popular-causes__category">
+
+                            <p>Image</p>
+
+                        </div>
+
+                    </div>
+
+                </a>
+
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="1100ms">
+
+                <a class="popular-causes__sinlge" href="assets/images/gallery/11.jpeg">
+
+                    <div class="popular-causes__img">
+
+                        <img src="assets/images/gallery/11.jpeg" alt="">
+
+                        <div class="popular-causes__category">
+
+                            <p>Image</p>
+
+                        </div>
+
+                    </div>
+
+                </a>
+
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="1200ms">
+
+                <a class="popular-causes__sinlge" href="assets/images/gallery/12.jpeg">
+
+                    <div class="popular-causes__img">
+
+                        <img src="assets/images/gallery/12.jpeg" alt="">
+
+                        <div class="popular-causes__category">
+
+                            <p>Image</p>
+
+                        </div>
+
+                    </div>
+
+                </a>
+
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="1300ms">
+
+                <a class="popular-causes__sinlge" href="assets/images/gallery/13.jpeg">
+
+                    <div class="popular-causes__img">
+
+                        <img src="assets/images/gallery/13.jpeg" alt="">
+
+                        <div class="popular-causes__category">
+
+                            <p>Image</p>
+
+                        </div>
+
+                    </div>
+
+                </a>
+
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="1400ms">
+
+                <a class="popular-causes__sinlge" href="assets/images/gallery/14.jpeg">
+
+                    <div class="popular-causes__img">
+
+                        <img src="assets/images/gallery/14.jpeg" alt="">
+
+                        <div class="popular-causes__category">
+
+                            <p>Image</p>
+
+                        </div>
+
+                    </div>
+
+                </a>
+
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="1500ms">
+
+                <a class="popular-causes__sinlge" href="assets/images/gallery/15.jpeg">
+
+                    <div class="popular-causes__img">
+
+                        <img src="assets/images/gallery/15.jpeg" alt="">
+
+                        <div class="popular-causes__category">
+
+                            <p>Image</p>
+
+                        </div>
+
+                    </div>
+
+                </a>
+
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="1600ms">
+
+                <a class="popular-causes__sinlge" href="assets/images/gallery/16.jpeg">
+
+                    <div class="popular-causes__img">
+
+                        <img src="assets/images/gallery/16.jpeg" alt="">
+
+                        <div class="popular-causes__category">
+
+                            <p>Image</p>
+
+                        </div>
+
+                    </div>
+
+                </a>
+
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="1700ms">
+
+                <a class="popular-causes__sinlge" href="assets/images/gallery/17.jpeg">
+
+                    <div class="popular-causes__img">
+
+                        <img src="assets/images/gallery/17.jpeg" alt="">
+
+                        <div class="popular-causes__category">
+
+                            <p>Image</p>
+
+                        </div>
+
+                    </div>
+
+                </a>
+
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="1800ms">
+
+                <a class="popular-causes__sinlge" href="assets/images/gallery/18.jpeg">
+
+                    <div class="popular-causes__img">
+
+                        <img src="assets/images/gallery/18.jpeg" alt="">
+
+                        <div class="popular-causes__category">
+
+                            <p>Image</p>
+
+                        </div>
+
+                    </div>
+
+                </a>
+
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="1900ms">
+
+                <a class="popular-causes__sinlge" href="assets/images/gallery/19.jpeg">
+
+                    <div class="popular-causes__img">
+
+                        <img src="assets/images/gallery/19.jpeg" alt="">
+
+                        <div class="popular-causes__category">
+
+                            <p>Image</p>
+
+                        </div>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+
         </div>
-    </section>
-</div>
+        <!-- <div class="text-center more-post__btn">
+            <a href="#" class="thm-btn">Load More</a>
+
+        </div> -->
+        <!-- /.text-center -->
+    </div>
 <!-- Site Footer One Start-->
 <footer class="site-footer" style="background-image: url(assets/images/backgrounds/site_footer_bg.jpg)">
     <div class="container">

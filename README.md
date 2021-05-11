@@ -1,2 +1,0 @@
-# sevanjali.in
- Sevanjali Foundation
