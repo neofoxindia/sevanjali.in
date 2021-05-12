@@ -630,21 +630,26 @@ done_el.style.display = 'none';
 
 function loading() {
     form_el.style.display = "none";
-    loading_el.style.display = 'block';
+    loading_el.style.display = 'flex';
     done_el.style.display = 'none';
 }
 
 function done() {
     form_el.style.display = "none";
     loading_el.style.display = 'none';
-    done_el.style.display = 'block';
+    done_el.style.display = 'flex';
 }
 
 $('#bootstrapForm').submit(function (event) {
     loading();
-    event.preventDefault()
-    // $('#bootstrapForm').submit(function (){
-    //     done();
-    // });
+    event.preventDefault();
+    $.ajax({
+        type: "POST",
+        url: "https://docs.google.com/forms/d/e/1FAIpQLSfkzWyIq-VDzC2CuY6ucGeJ6A0E46-TPDogorJSJ7VaMh0IyA/formResponse",
+        data: $('#bootstrapForm').serialize(),
+    });
+    setTimeout(function () {
+        done()
+    }, 2000);
 })
 
