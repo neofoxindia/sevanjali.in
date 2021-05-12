@@ -619,3 +619,32 @@
     });
 
 })(jQuery);
+
+const done_el = document.getElementById('done');
+const loading_el = document.getElementById("loading");
+const form_el = document.getElementById('contact-form');
+
+form_el.style.display = "flex";
+loading_el.style.display = 'none';
+done_el.style.display = 'none';
+
+function loading() {
+    form_el.style.display = "none";
+    loading_el.style.display = 'block';
+    done_el.style.display = 'none';
+}
+
+function done() {
+    form_el.style.display = "none";
+    loading_el.style.display = 'none';
+    done_el.style.display = 'block';
+}
+
+$('#bootstrapForm').submit(function (event) {
+    loading();
+    event.preventDefault()
+    // $('#bootstrapForm').submit(function (){
+    //     done();
+    // });
+})
+

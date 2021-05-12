@@ -191,15 +191,90 @@
 <section class="contact-page mt-5">
     <div class="container mt-5">
         <div class="block-title text-center">
-            <h4>Asked Quesitons</h4>
+            <h4>Asked Questions</h4>
             <h2>Contact With Us</h2>
         </div>
-        <div class="row">
-            <div class="col-xl-8">
-                <div class="contact-form p-0">
-                    <iframe id="g-form"
-                            src="https://docs.google.com/forms/d/e/1FAIpQLSfkzWyIq-VDzC2CuY6ucGeJ6A0E46-TPDogorJSJ7VaMh0IyA/viewform?embedded=true"
-                            width="100%" height="900px" frameborder="0" marginheight="0" marginwidth="0"></iframe>
+        <div class="row justify-content-between align-items-center">
+            <div id="loading" class="col-xl-8 justify-content-center">
+                <div class="row lds-ring">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+            <div id="done" class="col-xl-8 justify-content-center">
+                <img src="assets/images/resources/done.gif" alt="Done">
+            </div>
+            <div class="col-xl-8" id="contact-form">
+                <div class="contact-form">
+                    <form action="https://docs.google.com/forms/d/e/1FAIpQLSfkzWyIq-VDzC2CuY6ucGeJ6A0E46-TPDogorJSJ7VaMh0IyA/formResponse"
+                          target="_self"
+                          class="contact-form-validated contact-one__form"
+                          id="bootstrapForm"
+                          method="POST">
+
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <div class="contact-form__input-box">
+                                    <!-- Field type: "short" id: "391447873" -->
+                                    <fieldset>
+                                        <legend for="391447873">Your Name</legend>
+                                        <div class="form-group">
+                                            <input aria-label="Your Name" id="1793448286" type="text"
+                                                   name="entry.1793448286"
+                                                   min="4"
+                                                   class="form-control" required>
+                                        </div>
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <div class="col-xl-12">
+                                <div class="contact-form__input-box">
+                                    <!-- Field type: "short" id: "536086696" -->
+                                    <fieldset>
+                                        <legend for="536086696">Your Email</legend>
+                                        <div class="form-group">
+                                            <input aria-label="Email" id="317147331" type="email" name="entry.317147331"
+                                                   class="form-control" required>
+                                        </div>
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <div class="col-xl-12">
+                                <div class="contact-form__input-box">
+                                    <!-- Field type: "short" id: "542125608" -->
+                                    <fieldset>
+                                        <legend for="542125608">Phone Number</legend>
+                                        <div class="form-group">
+                                            <input aria-label="Phone Number" id="1829610231" type="text"
+                                                   name="entry.1829610231"
+                                                   pattern="[\d]{10}"
+                                                   class="form-control" required>
+                                        </div>
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <div class="col-xl-12">
+                                <div class="contact-form__input-box">
+                                    <!-- Field type: "paragraph" id: "302297273" -->
+                                    <fieldset>
+                                        <legend for="302297273">Message</legend>
+                                        <div class="form-group">
+                                                <textarea aria-label="Message" id="578053003" name="entry.578053003"
+                                                          class="form-control" minlength="10"></textarea>
+                                        </div>
+                                    </fieldset>
+                                </div>
+                            </div>
+                        </div>
+                        <input type="hidden" name="fvv" value="1">
+                        <input type="hidden" name="fbzx" value="-8131268518735084094">
+                        <input type="hidden" name="pageHistory" value="0">
+                        <input class="thm-btn contact-form__btn" type="submit" value="Submit">
+
+                    </form>
+
 
                 </div>
             </div>
@@ -239,13 +314,62 @@
 </section>
 <!--Contact Page End-->
 
+<!--suppress CssOverwrittenProperties -->
+<style>
+    .lds-ring {
+        display: inline-block;
+        position: relative;
+        width: 100px;
+        height: 100px;
+    }
+
+    .lds-ring div {
+        box-sizing: border-box;
+        display: block;
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        margin: 8px;
+        border: 4px solid #ff2525;
+        border-radius: 50%;
+        animation: lds-ring 1s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+        border-color: #ff2525 transparent transparent transparent;
+    }
+
+    .lds-ring div:nth-child(1) {
+        animation-delay: -0.45s;
+    }
+
+    .lds-ring div:nth-child(2) {
+        animation-delay: -0.3s;
+    }
+
+    .lds-ring div:nth-child(3) {
+        animation-delay: -0.15s;
+    }
+
+    @keyframes lds-ring {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+</style>
+
+
 <!--Contact Page Google Map Start-->
 <section class="contact-page-google-map">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4562.753041141002!2d-118.80123790098536!3d34.152323469614075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80e82469c2162619%3A0xba03efb7998eef6d!2sCostco+Wholesale!5e0!3m2!1sbn!2sbd!4v1562518641290!5m2!1sbn!2sbd"
+    <iframe src="https://maps.google.com/maps?q=udai%20mode,%20gangapur%20city&t=&z=15&ie=UTF8&iwloc=&output=embed"
             class="contact-page-google-map__one" allowfullscreen></iframe>
 
 </section>
 <!--Contact Page Google Map End-->
+<!--                    <iframe id="g-form"-->
+<!--                            src="https://docs.google.com/forms/d/e/1FAIpQLSfkzWyIq-VDzC2CuY6ucGeJ6A0E46-TPDogorJSJ7VaMh0IyA/viewform?embedded=true"-->
+<!--                            width="100%" height="900px" frameborder="0" marginheight="0" marginwidth="0"></iframe>-->
 <!-- Site Footer One Start-->
 <footer class="site-footer" style="background-image: url(assets/images/backgrounds/site_footer_bg.jpg)">
     <div class="container">
