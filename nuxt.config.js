@@ -51,6 +51,9 @@ export default {
     modules: [],
     // Build Configuration: https://go.nuxtjs.dev/config-build
     build: {},
+    router:{
+        base: '/sevanjali.in/'
+    },
     generate: {
         dir: 'docs'
     }
