@@ -1,7 +1,7 @@
 <template>
     <div class="container py-5">
         <div class="block-title">
-            <h2>Contact With Us</h2>
+            <h2> {{ $t('ContactWithUs') }}</h2>
         </div>
         <div class="row justify-content-center align-items-center">
             <div class="col-md-5 col-12">
@@ -17,7 +17,7 @@
                                 <div class="contact-form__input-box">
                                     <!-- Field type: "short" id: "391447873" -->
                                     <fieldset>
-                                        <legend for="391447873">Your Name</legend>
+                                        <legend for="391447873">{{ $t("Name") }}</legend>
                                         <div class="form-group">
                                             <input aria-label="Your Name" id="1793448286" type="text"
                                                    name="entry.1793448286"
@@ -31,7 +31,7 @@
                                 <div class="contact-form__input-box">
                                     <!-- Field type: "short" id: "536086696" -->
                                     <fieldset>
-                                        <legend for="536086696">Your Email</legend>
+                                        <legend for="536086696">{{ $t("Email") }}</legend>
                                         <div class="form-group">
                                             <input aria-label="Email" id="317147331" type="email"
                                                    name="entry.317147331"
@@ -44,7 +44,7 @@
                                 <div class="contact-form__input-box">
                                     <!-- Field type: "short" id: "542125608" -->
                                     <fieldset>
-                                        <legend for="542125608">Phone Number</legend>
+                                        <legend for="542125608">{{ $t("Phone") }}</legend>
                                         <div class="form-group">
                                             <input aria-label="Phone Number" id="1829610231" type="text"
                                                    name="entry.1829610231"
@@ -58,7 +58,7 @@
                                 <div class="contact-form__input-box">
                                     <!-- Field type: "paragraph" id: "302297273" -->
                                     <fieldset>
-                                        <legend for="302297273">Message</legend>
+                                        <legend for="302297273">{{ $t("Message") }}</legend>
                                         <div class="form-group">
                                                 <textarea aria-label="Message" id="578053003" name="entry.578053003"
                                                           class="form-control" minlength="10"></textarea>
@@ -80,12 +80,12 @@
             <div class="col-md-5 col-12 d-flex align-items-stretch">
                 <div class="contact-page__info-box rounded">
                     <div class="contact-page__info-box-address">
-                        <h4 class="contact-page__info-box-tilte">Address</h4>
-                        <p class="text-black-50 font-weight-bold">A/23 shivpuri udai mode,<br> Gangapur city
+                        <h4 class="contact-page__info-box-tilte">{{ $t("Address") }}</h4>
+                        <p class="text-black-50 font-weight-bold px-5">{{ $t("Location") }}
                         </p>
                     </div>
                     <div class="contact-page__info-box-phone">
-                        <h4 class="contact-page__info-box-tilte">Phone</h4>
+                        <h4 class="contact-page__info-box-tilte">{{ $t("Phone") }}</h4>
                         <p>
                             <a class="text-black-50 font-weight-bold" href="tel:+91 90240 50888">Mobile: +91 90240
                                 50888</a>
@@ -116,3 +116,24 @@ legend {
     color: black;
 }
 </style>
+<i18n lang="yaml">
+en:
+    ContactWithUs: "Contact With Us"
+    Name: "Your Name"
+    Email: "Your Email"
+    Phone: "Phone Number"
+    Message: "Message"
+    Address: "Address"
+    Submit: "Submit"
+    Location: "A/23 Shivpuri udai mode, Gangapur city dist. - Sawai Madhopur 322201 (Rajasthan)"
+hi:
+    ContactWithUs: "हमसे संपर्क करें"
+    Name: "आपका नाम"
+    Email: "आपका ईमेल"
+    Phone: "फ़ोन नंबर"
+    Message: "संदेश"
+    Address: "पता"
+    Submit: "प्रस्तुत"
+    Location: "A/23 शिवपुरी उदयपुर मोड, गंगापुर सिटी जिला - सवाई माधोपुर 322201 (राजस्थान)"
+</i18n>
+

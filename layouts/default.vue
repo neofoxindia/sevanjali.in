@@ -17,9 +17,22 @@ export default {
 </script>
 
 <style>
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+
+}
 .nuxt-link-exact-active {
     font-weight: bold;
     font-size: 1.2em;
     transition-duration: 200ms;
+}
+h1, h2, h3, h4 {
+    font-family: 'Oswald', sans-serif;
+}
+
+.logo {
+    width: 150px;
 }
 </style>

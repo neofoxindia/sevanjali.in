@@ -13,7 +13,7 @@ export default {
     name: "Gallery",
     methods:{
         getImgName(i){
-            return `images/gallery/${i}.jpeg`
+            return `/images/gallery/${i}.jpeg`
         },
         openImage(img){
             window.open(img, '_blank', 'height=800,width=1200')
